@@ -1,0 +1,33 @@
+Practical OSPF 
+
+Link State Routing || OSPF Routing Protocol using Cisco Packet Tracer
+
+https://www.youtube.com/watch?v=driCogL6QPc
+
+Setup PCs and IPs
+Give router fast0/0: 10.10.10.1
+Similarly for corresponding network: 20.20.20.1
+For router to router: 30.30.30.1
+Then 40.40.40.1
+Then 50.50.50.1
+
+
+THEN in CLI of Router 1
+exit
+router ospf 1
+Router(config-router)#network 10.0.0.0 0.255.255.255 area 0
+Router(config-router)#network 30.0.0.0 0.255.255.255 area 0
+Router(config-router)#network 40.0.0.0 0.255.255.255 area 0
+
+Then in CLI of router 2
+exit
+router ospf 1
+Router(config-router)#network 40.0.0.0 0.255.255.255 area 0
+Router(config-router)#network 50.0.0.0 0.255.255.255 area 0
+
+SIMILARLY for Router 3
+exit
+router ospf 1
+Router(config-router)#network 30.0.0.0 0.255.255.255 area 0
+Router(config-router)#network 20.0.0.0 0.255.255.255 area 0
+Router(config-router)#network 50.0.0.0 0.255.255.255 area 0
