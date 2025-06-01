@@ -1,0 +1,16 @@
+HTTP
+
+https://www.youtube.com/watch?v=vyzvdbnOTXY
+
+Setup devices
+IN WEB DEVICE:
+In 1st Server Go in Services, edit index.html
+
+IN DNS SERVER:
+Go in Services Tab, Turn On DNS Server,
+Give name as cisco
+Add IP address as 192.168.1.2
+
+IN PC
+SET IP AND DNS
+After that in desktop go in Web Browser, you can write website name i.e. cisco or IP i.e 192.168.1.2
