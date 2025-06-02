@@ -1,0 +1,38 @@
+EIGRP
+
+Place devices
+In Router 0
+Physical-> WIC-1T and place it
+similarly for Router1
+
+NOW FOR ASSIGNING IPs
+We will go to CLI of Router 0
+THERE 
+enable
+configure terminal
+interface FastEthernet0/0
+ip address 192.168.10.1 255.255.255.0
+no shutdown
+exit
+
+THEN
+interface serial 0/0/0
+ip address 192.168.20.1 255.255.255.0
+clock rate 128000
+no shutdown
+exit
+
+THEN Router#copy running-config startup-config
+
+SIMILARLY  FOR 2nd Router
+
+THEN
+IN ROUTER0 CLI
+configure terminal
+router eigrp 10
+network 192.168.10.0 255.255.255.0
+network 192.168.20.0 255.255.255.0
+ctrl+z
+copy running-config startup-config
+
+SMILARLY FOR Router 1
