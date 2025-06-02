@@ -1,0 +1,14 @@
+Practical 
+
+Connecting networks using RIP(Routing information Protocol)
+
+Router acts as a Network service provider who is providing IP Addresses to the PCs underlying it
+STEPS:
+PC, Switch, Router
+Here we will also give Default Gateway as Network IP i.e. Routers IP,
+Set routers IP as well and Turn it ON
+Then in router to router, hover it and assign 3rd network IP that can be 10.10.10.10
+Then Same for the 2nd router, but here when assigning it for router to router we will give 10.20.30.40
+
+Now Comes the RIP part
+In router go to RIP, You have to add 2, i.e. 192.168.1.0 or 2.0 AND 10.0.0.0
